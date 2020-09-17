@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WPY-Irent</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="di_aplikasi_penyewaan_ponsel_wpy">Di Aplikasi Penyewaan Ponsel WPY.</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum punya akun ?</string>
+    <string name="daftar_disini">Daftar disini !</string>
+
+    <string name="in_time">Start Time</string>
+    <string name="out_time">Finish Time</string>
+    <string name="default_remaining_time">00:01:00</string>
+    <string name="default_time">00:01</string>
+    <string name="ids">IDS</string>
+    <string name="daftar">Daftar</string>
+</resources>

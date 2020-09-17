@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kopi"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    android:overScrollMode="always"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bgcard"
+        android:gravity="center"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        android:padding="20dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/selamat_datang"
+            android:textColor="#0F0F0F"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/di_aplikasi_penyewaan_ponsel_wpy"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn2"
+            android:hint="Username"
+            android:padding="5dp"
+            android:textColorHint="@color/material_on_primary_emphasis_high_type"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edl_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:drawablePadding="5dp"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn2"
+            android:hint="Password"
+            android:padding="5dp"
+            android:textColorHint="@color/material_on_primary_emphasis_high_type"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edl_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:drawablePadding="5dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn2"
+            android:gravity="center"
+            android:text="@string/masuk"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="16sp"
+            app:backgroundTint="@color/cardColorOrange"
+            app:cornerRadius="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/belum_punya_akun"
+                android:textColor="#363636"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/daftar_disini"
+                android:textColor="@color/cardColorOrange"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvIds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ids"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

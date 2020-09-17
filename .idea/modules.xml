@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WPY-Irent.iml" filepath="$PROJECT_DIR$/.idea/modules/WPY-Irent.iml" group="WPY-Irent" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WPYIrent-WPY-Irent.iml" filepath="$PROJECT_DIR$/.idea/modules/WPYIrent-WPY-Irent.iml" group="WPY-Irent" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="WPY-Irent/app" />
+    </modules>
+  </component>
+</project>

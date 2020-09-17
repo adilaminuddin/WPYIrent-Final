@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoriActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg">
+
+        <ImageView
+            android:id="@+id/hiprofile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/profile"></ImageView>
+
+        <TextView
+            android:id="@+id/tvhi_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/hiprofile"
+            android:fontFamily="sans-serif"
+            android:text="Nama User"
+            android:textColor="#ffff"
+            android:textSize="22dp"></TextView>
+
+        <TextView
+            android:id="@+id/tvhi_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvhi_username"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/hiprofile"
+            android:fontFamily="sans-serif"
+            android:text="Alamat"
+            android:textColor="#ffff"
+            android:textSize="16dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvhiIdUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvhi_alamat"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/hiprofile"
+            android:text="idUser"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/btnhi_logout"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_alignParentTop="false"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_alignParentBottom="false"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:background="@drawable/bg_klr"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:paddingStart="10dp"-->
+        <!--            android:paddingLeft="10dp"-->
+        <!--            android:textAlignment="gravity">-->
+
+        <!--            <androidx.appcompat.widget.AppCompatImageView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:cropToPadding="true"-->
+        <!--                android:src="@drawable/ic_baseline_logout"></androidx.appcompat.widget.AppCompatImageView>-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textView333h"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Keluar"-->
+        <!--                android:textColor="@color/whiteTextColor" />-->
+        <!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbhi"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
